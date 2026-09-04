@@ -1,7 +1,7 @@
 // ==================== CONFIG ====================
 const UPSTREAM_PRIMARY = 'https://bu0eg1tdzu.cloudflare-gateway.com/dns-query';
 const UPSTREAM_FALLBACK = 'https://rhpcv957tj.cloudflare-gateway.com/dns-query';
-const UPSTREAM_GEO_BYPASS = 'https://dns.mullvad.net/dns-query'; // Re-resolve without ECS when geo-block returns loopback
+const UPSTREAM_GEO_BYPASS = 'https://dns.quad9.net/dns-query'; // Re-resolve without ECS when geo-block returns loopback
 const UPSTREAM_TIMEOUT = 5000;
 
 // Refresh interval for ALL lists (blocklist, allowlists, private TLDs, redirect rules)
@@ -29,9 +29,9 @@ const PRIVATE_TLD_URL = '/rules/private_tlds.txt';
 const DNS_REDIRECT_ENABLED = true;
 const REDIRECT_RULES_URL = '/rules/redirect_rules.txt';
 
-// Dedicated Mullvad Upstream Domains
+// Dedicated Quad9 Upstream Domains
 const MULLVAD_UPSTREAM_ENABLED = true;
-const MULLVAD_UPSTREAM_URL = '/rules/mullvad_upstream.txt';
+const MULLVAD_UPSTREAM_URL = '/rules/quad9_upstream.txt';
 
 // /debug endpoint — set to true only when needed, false by default to avoid unnecessary requests
 const DEBUG_ENABLED = false;
